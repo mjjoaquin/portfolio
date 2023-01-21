@@ -93,10 +93,38 @@
             height: 42vh;
             box-shadow: 0px 0px 10px #000;
             margin: 10px;
-
+            position: relative;
             border-radius: 10px;
             /* Rounds the corners of the project box */
+        }
 
+        .picture-box:hover {
+            /* dim the image when hovered */
+            filter: brightness(50%);
+            cursor: pointer;
+        }
+
+        .picture-box:hover::before {
+            /* add text on top of the image when hovered */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .picture-box-1:hover::before {
+            content: "Completed project, with static and animated options";
+        }
+
+        .picture-box-2:hover::before {
+            content: "Hardware test, looks promising!";
+        }
+
+        .picture-box-3:hover::before {
+            content: "Experimenting with Arduino under the hood and making a working prototype";
         }
 
         img {
@@ -140,15 +168,15 @@
             style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
             <img src="https://matob.web.id/random/wp-content/uploads/sites/2/2021/12/GitHub.jpg" alt="Project Image 1">
             <h2>See the code</h2>
-            <p>Go to Github</p>
+            <p>Visit the Github page</p>
         </div>
-        <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+        <div class="picture-box picture-box-1" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
             <img src="lightdex.gif" alt="Animated setup">
         </div>
-        <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+        <div class="picture-box picture-box-2" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
             <img src="lightdex2.jpg" alt="Working prototype">
         </div>
-        <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+        <div class="picture-box picture-box-3" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
             <img src="lightdex3.jpg" alt="Code concept">
         </div>
     </div>

@@ -93,12 +93,39 @@
             height: 42vh;
             box-shadow: 0px 0px 10px #000;
             margin: 10px;
-
+            position: relative;
             border-radius: 10px;
             /* Rounds the corners of the project box */
-
         }
 
+        .picture-box:hover {
+            /* dim the image when hovered */
+            filter: brightness(50%);
+            cursor: pointer;
+        }
+
+        .picture-box:hover::before {
+            /* add text on top of the image when hovered */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .picture-box-1:hover::before {
+            content: "Rear IO side, with shield, GPU, power button, and 12V power in";
+        }
+
+        .picture-box-2:hover::before {
+            content: "ITX frame with 200mm fan and hexagonal grill";
+        }
+
+        .picture-box-3:hover::before {
+            content: "Assembly and layout";
+        }
         img {
             width: 100%;
             height: 100%;
@@ -144,13 +171,13 @@
             <h2>See the printable</h2>
             <p>And make one yourself maybe ;)</p>
         </div>
-        <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+        <div class="picture-box picture-box-1" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
             <img src="ITX1.jpg" alt="Case rear side">
         </div>
-        <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+        <div class="picture-box picture-box-2" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
             <img src="ITX2.jpg" alt="Case structure">
         </div>
-        <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+        <div class="picture-box picture-box-3" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
             <img src="ITX3.jpg" alt="Internals">
         </div>
     </div>

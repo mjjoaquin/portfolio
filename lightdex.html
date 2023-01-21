@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<!-- Hello there ;) -->
+
+<head>
+    <title>Milan Joaquin | Portfolio | Lightdex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* CSS for styling the body */
+        body {
+            background-color: #27292c;
+            /*default dark*/
+            color: #e6e0d8;
+            /*default light*/
+            font-family: 'Open Sans', sans-serif;
+            /*default font*/
+        }
+
+        /* CSS for styling the side panel */
+        #side-panel {
+            background-image: url("banner-image.jpg");
+            background-size: cover;
+            /* Background size to cover the whole panel */
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 22vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* CSS for styling the title */
+        h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        /* CSS for styling the header links */
+        a {
+            color: #e6e0d8;
+            /* Force defaul colour */
+            text-decoration: underline;
+            font-size: 24px;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* CSS for styling the main content */
+        #main-content {
+            margin-left: 250px;
+            /* Added margin to push main content outside of side panel */
+        }
+
+        #logos img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            /* add margin between logos */
+        }
+
+        .project-box {
+            padding-bottom: 20%;
+            box-sizing: border-box;
+            overflow: hidden;
+            height: 40vh;
+            box-shadow: 0px 0px 10px #000;
+            margin: 10px;
+
+            border-radius: 10px;
+            /* Rounds the corners of the project box */
+
+        }
+
+        .project-box h2,
+        .project-box p {
+            padding: 10px 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            overflow: hidden;
+        }
+
+        .project-box:hover {
+            background-color: #333;
+            cursor: pointer;
+        }
+
+        #project-container {
+            position: relative;
+            margin-left: 10vw;
+            /* push the container away from the side panel */
+        }
+
+        .picture-box {
+            box-sizing: border-box;
+            overflow: hidden;
+            height: 40vh;
+            box-shadow: 0px 0px 10px #000;
+            margin: 10px;
+
+            border-radius: 10px;
+            /* Rounds the corners of the project box */
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #back-button {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="side-panel">
+        <h1>Milan Joaquin</h1>
+        <a href="javascript:history.back()" id="back-button"> &nbsp;&nbsp;&lt; Back</a>
+        <a href="https://drive.google.com/file/d/1LpB70wsHQN6nvlEiZEyTTWTKem5ew9L4/view?usp=share_link">Résumé</a>
+        <a href="https://www.printables.com/social/192937-mjjoaquin/models">My Printables</a>
+        <div id="logos" style="display: flex; align-items: center;">
+            <a href="mailto:milanjoaq@gmail.com">
+                <img src="https://icon-library.com/images/email-icon-white/email-icon-white-5.jpg" alt="Email">
+            </a>
+            <a href="https://github.com/mjjoaquin">
+                <img src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/milan-joaquin-6308b6221/">
+                <img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png"
+                    alt="LinkedIn">
+            </a>
+        </div>
+
+    </div>
+    <div id="main-content">
+        <h1> Lightdex </h1>
+        <div id="project-container"
+            style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); grid-gap: 10px;">
+            <div class="project-box" onclick="window.location.href = 'https://github.com/mjjoaquin/lightdex';"
+                style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+                <img src="https://matob.web.id/random/wp-content/uploads/sites/2/2021/12/GitHub.jpg"
+                    alt="Project Image 1">
+                <h2>See the code</h2>
+                <p>Go to Github</p>
+            </div>
+            <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+                <img src="lightdex.gif" alt="Animated setup">
+            </div>
+            <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+                <img src="lightdex2.jpg" alt="Working prototype">
+            </div>
+            <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+                <img src="lightdex3.jpg" alt="Code concept">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -50,12 +50,6 @@
             display: block;
         }
 
-        /* CSS for styling the main content */
-        #main-content {
-            margin-left: 250px;
-            /* Added margin to push main content outside of side panel */
-        }
-
         #logos img {
             width: 30px;
             height: 30px;
@@ -64,10 +58,10 @@
         }
 
         .project-box {
-            padding-bottom: 20%;
+            padding-bottom: 15vh;
             box-sizing: border-box;
             overflow: hidden;
-            height: 40vh;
+            height: 42vh;
             box-shadow: 0px 0px 10px #000;
             margin: 10px;
 
@@ -90,14 +84,14 @@
 
         #project-container {
             position: relative;
-            margin-left: 10vw;
+            margin-left: 23vw;
             /* push the container away from the side panel */
         }
 
         .picture-box {
             box-sizing: border-box;
             overflow: hidden;
-            height: 40vh;
+            height: 42vh;
             box-shadow: 0px 0px 10px #000;
             margin: 10px;
 
@@ -138,28 +132,24 @@
                     alt="LinkedIn">
             </a>
         </div>
-
     </div>
-    <div id="main-content">
-        <h1> Lightdex </h1>
-        <div id="project-container"
-            style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); grid-gap: 10px;">
-            <div class="project-box" onclick="window.location.href = 'https://github.com/mjjoaquin/lightdex';"
-                style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
-                <img src="https://matob.web.id/random/wp-content/uploads/sites/2/2021/12/GitHub.jpg"
-                    alt="Project Image 1">
-                <h2>See the code</h2>
-                <p>Go to Github</p>
-            </div>
-            <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
-                <img src="lightdex.gif" alt="Animated setup">
-            </div>
-            <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
-                <img src="lightdex2.jpg" alt="Working prototype">
-            </div>
-            <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
-                <img src="lightdex3.jpg" alt="Code concept">
-            </div>
+    <h1> Lightdex </h1>
+    <div id="project-container"
+        style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); grid-gap: 10px;">
+        <div class="project-box" onclick="window.location.href = 'https://github.com/mjjoaquin/lightdex';"
+            style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+            <img src="https://matob.web.id/random/wp-content/uploads/sites/2/2021/12/GitHub.jpg" alt="Project Image 1">
+            <h2>See the code</h2>
+            <p>Go to Github</p>
+        </div>
+        <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+            <img src="lightdex.gif" alt="Animated setup">
+        </div>
+        <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+            <img src="lightdex2.jpg" alt="Working prototype">
+        </div>
+        <div class="picture-box" style="box-shadow: 0px 0px 10px #000; border-radius: 10px;">
+            <img src="lightdex3.jpg" alt="Code concept">
         </div>
     </div>
 </body>

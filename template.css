@@ -37,7 +37,6 @@ a {
     display: block;
 }
 
-
 #logos img {
     width: 30px;
     height: 30px;
@@ -48,15 +47,6 @@ a {
 .project-box {
     /* Box used for projects (image combined with text) */
     padding-bottom: 16vh;
-    box-sizing: border-box;
-    overflow: hidden;
-    height: 42vh;
-    box-shadow: 0px 0px 10px #000;
-    margin: 5px;
-    border-radius: 10px;
-}
-
-.project-container {
     box-sizing: border-box;
     overflow: hidden;
     height: 42vh;

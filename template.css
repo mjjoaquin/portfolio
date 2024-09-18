@@ -1,0 +1,120 @@
+/* CSS for styling the body */
+body {
+    background-color: #27292c;
+    /*default dark*/
+    color: #e6e0d8;
+    /*default light*/
+    font-family: 'Open Sans', sans-serif !important;
+    /*default font*/
+}
+
+/* CSS for styling the side panel */
+#side-panel {
+    background-image: url("banner-image.jpg");
+    background-size: cover;
+    /* Background size to cover the whole panel */
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensure the side panel takes the full height of the viewport */
+}
+
+/* CSS for styling the title */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* CSS for styling the header links */
+a {
+    color: #e6e0d8;
+    /* Force default colour */
+    text-decoration: underline;
+    font-size: 1.5em;
+    margin-top: 10px;
+    display: block;
+}
+
+
+#logos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    /* add margin between logos */
+}
+
+.project-box {
+    /* Box used for projects (image combined with text) */
+    padding-bottom: 16vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 42vh;
+    box-shadow: 0px 0px 10px #000;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.project-container {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 42vh;
+    box-shadow: 0px 0px 10px #000;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.text-box {
+    /* Box used for text only */
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 42vh;
+    box-shadow: 0px 0px 10px #000;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.project-box h2,
+.project-box p {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    line-height: 1.25;
+    margin: 5px;
+}
+
+.project-box:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.picture-box {
+    /* Box used for images only */
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 42vh;
+    box-shadow: 0px 0px 10px #000;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.picture-box:hover {
+    /* dim the image when hovered */
+    filter: brightness(40%);
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#back-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+}

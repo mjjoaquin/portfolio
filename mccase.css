@@ -1,0 +1,22 @@
+/* add text on top of the image when hovered */
+.picture-box:hover::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.picture-box-1:hover::before {
+    content: "Rear IO side, with shield, GPU, power button, and 12V power in";
+}
+
+.picture-box-2:hover::before {
+    content: "ITX frame with 200mm fan and hexagonal grill";
+}
+
+.picture-box-3:hover::before {
+    content: "Assembly and layout";
+}

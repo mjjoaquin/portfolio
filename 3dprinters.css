@@ -1,0 +1,22 @@
+/* add text on top of the image when hovered */
+.picture-box:hover::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.picture-box-1:hover::before {
+    content: "Ender 3-based cloud printer connecting to WiFi and ready for a print to be queued from anywhere";
+}
+
+.picture-box-2:hover::before {
+    content: "Goliath printer automatically creating a bed mesh and aligning Z lead screws before a print";
+}
+
+.picture-box-3:hover::before {
+    content: "Smooth and silent semi-automated operation";
+}

@@ -10,19 +10,19 @@
 }
 
 .picture-box-1 img {
-    content: url('daytimeon.jpg');
+    content: url('content/daytimeon.jpg');
 }
 
 .picture-box-1 img:hover {
-    content: url('daytimeoff.jpg');
+    content: url('content/daytimeoff.jpg');
 }
 
 .picture-box-2 img {
-    content: url('daytimeafter.jpg');
+    content: url('content/daytimeafter.jpg');
 }
 
 .picture-box-2 img:hover {
-    content: url('daytimebefore.jpg');
+    content: url('content/daytimebefore.jpg');
 }
 
 .picture-box-3:hover::before {

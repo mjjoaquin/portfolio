@@ -10,7 +10,7 @@ body {
 
 /* CSS for styling the side panel */
 #side-panel {
-    background-image: url("banner-image.jpg");
+    background-image: url("content/banner-image.jpg");
     background-size: cover;
     /* Background size to cover the whole panel */
     background-repeat: no-repeat;

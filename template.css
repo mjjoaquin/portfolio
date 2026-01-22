@@ -103,7 +103,7 @@ a {
 
 .picture-box:hover {
     /* dim the image when hovered */
-    filter: brightness(40%);
+    filter: brightness(70%);
     cursor: pointer;
 }
 

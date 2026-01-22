@@ -16,13 +16,13 @@
 }
 
 .picture-box-1:hover::before {
-    content: "Rear IO side, with shield, GPU, power button, and 12V power in";
+    content: "2D Render of the PCB layout showing routing and fill";
 }
 
 .picture-box-2:hover::before {
-    content: "ITX frame with 200mm fan and hexagonal grill";
+    content: "3D render of the PCB design showing component layout";
 }
 
 .picture-box-3:hover::before {
-    content: "Assembly and layout";
+    content: "Final product: The Synchronous Buck-Boost Converter Module 3D print, PCB, and assembled product";
 }
